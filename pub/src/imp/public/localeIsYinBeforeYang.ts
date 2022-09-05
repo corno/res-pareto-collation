@@ -1,5 +1,6 @@
 import * as api from "api-pareto-collation"
+import { lessThan } from "../private/lessThan"
 
 export const localeIsYinBeforeYang: api.FIsYinBeforeYang = ($) => {
-    return $.yin.localeCompare($.yang) < 0
+    return lessThan($.yin.localeCompare($.yang), 0)
 }
