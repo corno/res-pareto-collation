@@ -1,3 +1,3 @@
 
-export * from "./public/localeIsYinBeforeYang"
-export * from "./public/createSortedForEach"
+export * from "./public/f_localeIsYinBeforeYang"
+export * from "./public/f_createSortedForEach"
