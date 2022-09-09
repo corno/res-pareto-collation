@@ -23,7 +23,7 @@ export const f_createGetTestset: api.FCreateGetTestset = ($d) => {
             builder.add(name, {
                 type: ["test", {
                     type: ["boolean", {
-                        test: pub.localeIsYinBeforeYang({ yin: a, yang: b})
+                        test: pub.f_localeIsYinBeforeYang({ yin: a, yang: b})
                     }]
                 }]
             })

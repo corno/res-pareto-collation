@@ -12,10 +12,7 @@ function imp<T>(
 
     return <T>(
         $: pt.Dictionary<T>,
-        $i: ($: {
-            readonly "entry": T;
-            readonly "key": string;
-        }) => void
+        $i: ($: api.TKeyValuePair<T>) => void
     ) => {
         const temp: { key: string, value: T }[] = []
 
@@ -26,10 +23,7 @@ function imp<T>(
             })
         })
         temp.sort((a, b) => $d.isYinBeforeYang({ yin: b.key, yang: a.key }) ? 1 : -1).forEach(($) => {
-            $i({
-                key: $.key,
-                entry: $.value,
-            })
+            $i($)
         })
 
         //     (a, b) => $d.isYinBeforeYang({ yin: b, yang: a }),

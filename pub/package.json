@@ -17,12 +17,12 @@
     "url": "git+https://github.com/corno/res-pareto-collation.git"
   },
   "dependencies": {
-    "api-pareto-collation": "^0.8.0",
+    "api-pareto-collation": "^0.10.0",
     "pareto-core-internals": "^0.6.0"
   },
   "version": "0.5.0",
   "devDependencies": {
     "@types/node": "^18.7.16"
   },
-  "content-fingerprint": "dee7569c8f1dc2d185077464c7792ed3b1d428ff"
+  "content-fingerprint": "a7e7110ea25cb2c36a9ac68f164f03eb35f22ccd"
 }
