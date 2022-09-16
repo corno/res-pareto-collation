@@ -1,14 +1,8 @@
 import * as pt from "pareto-core-types"
-import * as pi from "pareto-core-internals"
 
 import * as api from "api-pareto-collation"
 
-
-function imp<T>(
-    $d: {
-        isYinBeforeYang: api.FIsYinBeforeYang
-    }
-): api.PSortedForEach {
+export const fCreateSortedForEach: api.FCreateSortedForEach = ($d) => {
 
     return <T>(
         $: pt.Dictionary<T>,
@@ -30,8 +24,4 @@ function imp<T>(
         //     $i
         // )
     }
-}
-
-export const f_createSortedForEach: api.FCreateSortedForEach = ($d) => {
-    return imp($d)
 }
