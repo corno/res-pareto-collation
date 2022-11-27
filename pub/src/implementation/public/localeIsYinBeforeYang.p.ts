@@ -1,4 +1,4 @@
-import * as api from "api-pareto-collation"
+import * as api from "../../interface"
 import { lessThan } from "../private/lessThan.p"
 
 export const fLocaleIsYinBeforeYang: api.FIsYinBeforeYang = ($) => {
