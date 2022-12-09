@@ -19,7 +19,7 @@
   "dependencies": {
     "pareto-core-internals": "^0.11.0"
   },
-  "version": "0.9.0",
+  "version": "0.9.1",
   "devDependencies": {
     "@types/node": "^18.11.12"
   },
