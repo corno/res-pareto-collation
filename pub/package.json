@@ -21,8 +21,8 @@
   },
   "version": "0.9.0",
   "devDependencies": {
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.12"
   },
   "interface-fingerprint": "be652f507991953d400f9cdd258109eb803ac65a",
-  "content-fingerprint": "2605629c37810647e6a9eaffb56a4713331830fb"
+  "content-fingerprint": "4e8ca0c5d75d7ffa88b1ceca0286d67b278eb137"
 }
