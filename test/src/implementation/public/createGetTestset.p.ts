@@ -16,9 +16,7 @@ export const createGetTestset: api.FCreateGetTestset = ($d) => {
         function createTest(name: string, a: string, b: string) {
             builder.add(name, {
                 type: ["test", {
-                    type: ["boolean", {
-                        test: pub.$a.localeIsABeforeB({ a: a, b: b})
-                    }]
+                    type: ["boolean",pub.$a.localeIsABeforeB({ a: a, b: b})]
                 }]
             })
         }
