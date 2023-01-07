@@ -21,7 +21,7 @@
   },
   "version": "0.10.0",
   "devDependencies": {
-    "@types/node": "^18.11.13"
+    "@types/node": "^18.11.18"
   },
-  "content-fingerprint": "36791a510f059929f9724a3c046b763c92ceb97e"
+  "content-fingerprint": "331e04653fc39b7d53765102907cddf52b4f3499"
 }
