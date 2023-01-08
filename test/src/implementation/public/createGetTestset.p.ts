@@ -15,8 +15,8 @@ export const createGetTestset: api.FCreateGetTestset = ($d) => {
         const builder = pm.createUnsafeDictionaryBuilder<test.TTestElement>( )
         function createTest(name: string, a: string, b: string) {
             builder.add(name, {
-                type: ["test", {
-                    type: ["boolean",pub.$a.localeIsABeforeB({ a: a, b: b})]
+                type: ['test', {
+                    type: ['boolean',pub.$a.localeIsABeforeB({ a: a, b: b})]
                 }]
             })
         }
