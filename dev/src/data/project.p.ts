@@ -43,10 +43,8 @@ export const project: NProject.TProject = {
                         // "main": "glo-pareto-main",
                     }),
                     'algorithms': wd({
-                        "localeIsABeforeB": ['algorithm', {
-                            'type': ['function', {
-                                'function': "IsABeforeB"
-                            }],
+                        "localeIsABeforeB": ['function', {
+                            'function': "IsABeforeB"
                         }],
                     })
                 },
