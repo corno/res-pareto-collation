@@ -12,7 +12,7 @@ import { string, reference, externalReference, number, boolean } from "lib-paret
 import * as NProject from "lib-pareto-typescript-project/dist/modules/project"
 const wd = pr.wrapRawDictionary
 export const project: NProject.TProject = {
-    'resource': true,
+    'type': ['resource', null],
     'modules': wd({
         "main": {
             'definition': {
@@ -34,18 +34,21 @@ export const project: NProject.TProject = {
                             'return value': boolean()
                         }
                     }),
-                    'callbacks': wd({
-                    }),
                     'interfaces': wd({}),
+                    'callbacks': wd({}),
+                    'pipes': wd({}),
                 },
                 'api': {
                     'imports': wd({
                         // "main": "glo-pareto-main",
                     }),
                     'algorithms': wd({
-                        "localeIsABeforeB": ['function', {
-                            'function': "IsABeforeB"
-                        }],
+                        "localeIsABeforeB": {
+                            'definition': ['function', {
+                                'function': "IsABeforeB"
+                            }],
+                            'type': ['reference', null],
+                        },
                     })
                 },
             },
