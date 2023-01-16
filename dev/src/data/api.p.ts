@@ -2,11 +2,9 @@ import * as pr from "pareto-core-raw"
 import {
     externalReference as er,
     string as str,
-    nullType,
-    type,
     reference as ref,
     boolean as bln,
-    array, dictionary, group, member, taggedUnion, types, _function
+    array, dictionary, group, member, taggedUnion, types, _function, typeReference, externalTypeReference
 } from "lib-pareto-typescript-project/dist/modules/glossary/api/shorthands.p"
 
 
@@ -19,7 +17,7 @@ export const $: mmoduleDefinition.TModuleDefinition = {
     'glossary': {
         'imports': d({
             // "project": "../../project",
-            // "common": "glo-pareto-common",
+            "common": "glo-pareto-common",
             // "main": "glo-pareto-main",
         }),
         'namespace': {
@@ -34,8 +32,8 @@ export const $: mmoduleDefinition.TModuleDefinition = {
         },
         'functions': d({
             "IsABeforeB": {
-                'data': reference("StringPair"),
-                'return value': boolean()
+                'data': typeReference("StringPair"),
+                'return value': externalTypeReference("common", "Boolean"),
             }
         }),
         'callbacks': d({}),
