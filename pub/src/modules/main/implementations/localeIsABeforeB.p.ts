@@ -1,5 +1,5 @@
 import * as api from "../api"
 
-export const ilocaleIsABeforeB: api.ClocaleIsABeforeB = ($) => {
+export const $$: api.ClocaleIsABeforeB = ($) => {
     return $.a.localeCompare($.b) < 0
 }
