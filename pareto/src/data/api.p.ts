@@ -20,6 +20,7 @@ export const $: mmoduleDefinition.TModuleDefinition = {
             "common": "glo-pareto-common",
             // "main": "glo-pareto-main",
         }),
+        'parameters': d({}),
         'namespace': {
             'types': types({
                 "StringPair": group({
