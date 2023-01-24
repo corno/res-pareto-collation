@@ -6,4 +6,4 @@ export type TStringPair = {
     readonly 'b': string
 }
 
-export type FIsABeforeB = ($: TStringPair) => mcommon.TBoolean
+export type FIsABeforeB = ($: TStringPair,) => mcommon.TBoolean

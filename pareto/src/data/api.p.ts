@@ -31,13 +31,8 @@ export const $: mmoduleDefinition.TModuleDefinition = {
 
         },
         'functions': d({
-            "IsABeforeB": {
-                'data': typeReference("StringPair"),
-                'return value': externalTypeReference("common", "Boolean"),
-            }
+            "IsABeforeB": _function(typeReference("StringPair"), externalTypeReference("common", "Boolean"))
         }),
-        'callbacks': d({}),
-        'pipes': d({}),
     },
     'api': {
         'imports': d({
@@ -45,9 +40,9 @@ export const $: mmoduleDefinition.TModuleDefinition = {
         }),
         'algorithms': d({
             "localeIsABeforeB": {
-                'definition': ['function', {
+                'definition': {
                     'function': "IsABeforeB"
-                }],
+                },
                 'type': ['reference', null],
             },
         })
