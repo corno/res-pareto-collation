@@ -21,16 +21,13 @@ export const $: mmoduleDefinition.TModuleDefinition = {
             // "main": "glo-pareto-main",
         }),
         'parameters': d({}),
-        'namespace': {
-            'types': types({
-                "StringPair": group({
-                    "a": member(str()),
-                    "b": member(str()),
-                })
-            }),
-            'interfaces': d({}),
-
-        },
+        'types': types({
+            "StringPair": group({
+                "a": member(str()),
+                "b": member(str()),
+            })
+        }),
+        'interfaces': d({}),
         'functions': d({
             "IsABeforeB": _function(typeReference("StringPair"), externalTypeReference("common", "Boolean"))
         }),

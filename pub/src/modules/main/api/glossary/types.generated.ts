@@ -1,9 +1,10 @@
 import * as pt from 'pareto-core-types'
+
 import * as mcommon from "glo-pareto-common"
 
-export type TStringPair = {
+export namespace GStringPair {}
+export type GStringPair = {
     readonly 'a': string
     readonly 'b': string
 }
-
-export type FIsABeforeB = ($: TStringPair,) => mcommon.TBoolean
+export type UStringPair = GStringPair
