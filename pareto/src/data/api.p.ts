@@ -21,6 +21,7 @@ export const $: mmoduleDefinition.TModuleDefinition = {
             // "main": "glo-pareto-main",
         }),
         'parameters': d({}),
+        'templates': d({}),
         'types': types({
             "StringPair": group({
                 "a": member(str()),
