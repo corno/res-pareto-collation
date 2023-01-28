@@ -1,49 +1,39 @@
 import * as pr from 'pareto-core-raw'
+
 import {
-    externalReference as er,
-    string as str,
-    reference as ref,
-    boolean as bln,
-    array, dictionary, group, member, taggedUnion, types, _function, typeReference, externalTypeReference
+    string,
+    array, dictionary, group, member, taggedUnion, types, _function, typeReference,
 } from "lib-pareto-typescript-project/dist/modules/glossary/api/shorthands.p"
 
+import { definitionReference, constructor, algorithm } from "lib-pareto-typescript-project/dist/modules/moduleDefinition/api/shorthands.p"
 
-import { definitionReference, externalDefinitionReference, constructor } from "lib-pareto-typescript-project/dist/modules/moduleDefinition/api/shorthands.p"
-import * as mproject from "lib-pareto-typescript-project/dist/modules/project"
 import * as mmoduleDefinition from "lib-pareto-typescript-project/dist/modules/moduleDefinition"
+
 const d = pr.wrapRawDictionary
 
 export const $: mmoduleDefinition.TModuleDefinition = {
     'glossary': {
         'imports': d({
-            // "project": "../../project",
             "common": "glo-pareto-common",
-            // "main": "glo-pareto-main",
         }),
         'parameters': d({}),
         'templates': d({}),
         'types': types({
             "StringPair": group({
-                "a": member(str()),
-                "b": member(str()),
+                "a": member(string()),
+                "b": member(string()),
             })
         }),
         'interfaces': d({}),
         'functions': d({
-            "IsABeforeB": _function(typeReference("StringPair"), externalTypeReference("common", "Boolean"))
+            "IsABeforeB": _function(typeReference("StringPair"), typeReference("common", "Boolean"))
         }),
     },
     'api': {
         'imports': d({
-            // "main": "glo-pareto-main",
         }),
         'algorithms': d({
-            "localeIsABeforeB": {
-                'definition': {
-                    'function': "IsABeforeB"
-                },
-                'type': ['reference', null],
-            },
+            "localeIsABeforeB": algorithm(definitionReference("IsABeforeB"))
         })
     },
 }
