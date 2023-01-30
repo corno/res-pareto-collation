@@ -2,12 +2,12 @@ import * as pr from 'pareto-core-raw'
 
 import {
     string,
-    array, dictionary, group, member, taggedUnion, types, _function, typeReference,
-} from "lib-pareto-typescript-project/dist/modules/glossary/api/shorthands.p"
+    array, dictionary, group, member, taggedUnion, types, typeReference, func, data,
+} from "lib-pareto-typescript-project/dist/submodules/glossary/shorthands.p"
 
-import { definitionReference, constructor, algorithm } from "lib-pareto-typescript-project/dist/modules/moduleDefinition/api/shorthands.p"
+import { definitionReference, constructor, algorithm } from "lib-pareto-typescript-project/dist/submodules/moduleDefinition/shorthands.p"
 
-import * as mmoduleDefinition from "lib-pareto-typescript-project/dist/modules/moduleDefinition"
+import * as mmoduleDefinition from "lib-pareto-typescript-project/dist/submodules/moduleDefinition"
 
 const d = pr.wrapRawDictionary
 
@@ -26,7 +26,7 @@ export const $: mmoduleDefinition.TModuleDefinition = {
         }),
         'interfaces': d({}),
         'functions': d({
-            "IsABeforeB": _function(typeReference("StringPair"), typeReference("common", "Boolean"))
+            "IsABeforeB": func(typeReference("StringPair"), null, null, data(typeReference("common", "Boolean"), false)),
         }),
     },
     'api': {
