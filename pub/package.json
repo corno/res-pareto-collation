@@ -19,6 +19,6 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "version": "0.0.0",
+  "version": "0.16.0",
   "content-fingerprint": "f31eaa60c63ac7cebe70ca04c71cdf11ca1ec12a"
 }
