@@ -4,7 +4,7 @@
   "description": "a pareto wrapper around collation functions as Pareto lacks them. collation functions are used for ordering strings",
 
   "dependencies": {
-    "glo-pareto-common": "^0.10.0",
+    "glo-pareto-common": "^0.11.0",
     "pareto-core-internals": "^0.11.0"
   },
   "devDependencies": {
