@@ -2,6 +2,7 @@
   "author": "Corno",
   "license": "ISC",
   "description": "a pareto wrapper around collation functions as Pareto lacks them. collation functions are used for ordering strings",
+
   "dependencies": {
     "glo-pareto-common": "^0.11.0",
     "pareto-core-internals": "^0.11.0"
@@ -13,12 +14,8 @@
     "dist"
   ],
   "repository": {
-    "type": "git",
-    "url": "http://github.com/corno/res-pareto-collation.git"
+    "type": "git"
   },
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "name": "res-pareto-collation",
-  "version": "0.17.0",
-  "content-fingerprint": "1bd2812782f630f6198e612c5b1712cbeeb8d9b5"
+  "types": "dist/index.d.ts"
 }
