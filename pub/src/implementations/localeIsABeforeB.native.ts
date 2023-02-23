@@ -1,5 +1,5 @@
-import * as api from "../api"
+import { ClocaleIsABeforeB } from "../api"
 
-export const $$: api.ClocaleIsABeforeB = ($) => {
+export const $$:ClocaleIsABeforeB = ($) => {
     return $.a.localeCompare($.b) < 0
 }

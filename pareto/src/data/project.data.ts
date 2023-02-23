@@ -1,12 +1,12 @@
 import * as pd from 'pareto-core-data'
 
-import * as mproject from "lib-pareto-typescript-project/dist/submodules/project"
+import * as gproject from "lib-pareto-typescript-project/dist/submodules/project"
 
 import { $ as api } from "./api.data"
 
 const d = pd.d
 
-export const $: mproject.T.Project<pd.SourceLocation> = {
+export const $: gproject.T.Project<pd.SourceLocation> = {
     'author': "Corno",
     'description': "a pareto wrapper around collation functions as Pareto lacks them. collation functions are used for ordering strings",
     'license': "ISC",
