@@ -13,7 +13,7 @@ export const $$:CgetTestSet = () => {
     function createTest(name: string, a: string, b: string) {
         builder.add(name, {
             type: ['test', {
-                type: ['boolean', gpub.$a.localeIsABeforeB({ a: a, b: b })]
+                type: ['boolean', gpub.$r.localeIsABeforeB({ a: a, b: b })]
             }]
         })
     }
