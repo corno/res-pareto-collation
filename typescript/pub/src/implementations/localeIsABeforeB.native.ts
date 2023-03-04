@@ -1,5 +1,5 @@
-import { ClocaleIsABeforeB } from "../definition/api.generated"
+import { localeIsABeforeB } from "../definition/api.generated"
 
-export const $$:ClocaleIsABeforeB = ($) => {
+export const $$:localeIsABeforeB = ($) => {
     return $.a.localeCompare($.b) < 0
 }

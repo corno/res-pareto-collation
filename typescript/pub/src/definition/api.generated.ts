@@ -1,9 +1,9 @@
 import * as pt from 'pareto-core-types'
 
-import * as gthis from "./glossary"
+import * as g_this from "./glossary"
 
-export type ClocaleIsABeforeB = gthis.FIsABeforeB
+export type localeIsABeforeB = g_this.F.IsABeforeB
 
 export type API = {
-    localeIsABeforeB: ClocaleIsABeforeB
+    localeIsABeforeB: localeIsABeforeB
 }
