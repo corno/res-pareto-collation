@@ -27,6 +27,7 @@ export const $: gglossary.T.Glossary<pd.SourceLocation> = {
             "b": member(string()),
         })),
     }),
+    'builders': d({}),
     'interfaces': d({}),
     'functions': d({
         "IsABeforeB": func(typeReference("StringPair"), null, null, data(typeReference("common", "Boolean"), false)),
