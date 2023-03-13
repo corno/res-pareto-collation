@@ -12,8 +12,9 @@ import {
     sfunc,
     type,
     optional,
-    reference,
     number,
+    externalTypeReference,
+    imp,
 } from "lib-pareto-typescript-project/dist/submodules/glossary/shorthands"
 
 import * as g_glossary from "lib-pareto-typescript-project/dist/submodules/glossary"
@@ -21,6 +22,9 @@ const d = pd.d
 
 export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
     'parameters': d({}),
+    'imports': d({
+        "common": imp({}),
+    }),
     'types': d({
         "StringPair": type(group({
             "a": member(string()),
@@ -31,7 +35,7 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
         'builders': d({}),
 
         'functions': d({
-            "IsABeforeB": sfunc(typeReference("StringPair"), null, null, sdata(typeReference("common", "Boolean"))),
+            "IsABeforeB": sfunc(typeReference("StringPair"), null, null, sdata(externalTypeReference("common", "Boolean"))),
         }),
 
     }],
