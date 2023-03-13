@@ -7,19 +7,19 @@ import {
     dictionary, member, taggedUnion, types, group,
     array,
     typeReference,
-    data,
+    sdata,
     boolean,
-    func,
+    sfunc,
     type,
     optional,
     reference,
     number,
 } from "lib-pareto-typescript-project/dist/submodules/glossary/shorthands"
 
-import * as gglossary from "lib-pareto-typescript-project/dist/submodules/glossary"
+import * as g_glossary from "lib-pareto-typescript-project/dist/submodules/glossary"
 const d = pd.d
 
-export const $: gglossary.T.Glossary<pd.SourceLocation> = {
+export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
     'parameters': d({}),
     'types': d({
         "StringPair": type(group({
@@ -27,9 +27,12 @@ export const $: gglossary.T.Glossary<pd.SourceLocation> = {
             "b": member(string()),
         })),
     }),
-    'builders': d({}),
-    'interfaces': d({}),
-    'functions': d({
-        "IsABeforeB": func(typeReference("StringPair"), null, null, data(typeReference("common", "Boolean"), false)),
-    }),
+    'type': ['synchronous', {
+        'builders': d({}),
+
+        'functions': d({
+            "IsABeforeB": sfunc(typeReference("StringPair"), null, null, sdata(typeReference("common", "Boolean"))),
+        }),
+
+    }],
 }
