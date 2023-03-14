@@ -8,5 +8,5 @@ export namespace B {}
 
 export namespace F {
     
-    export type IsABeforeB = ($: T.StringPair,) => g_common.T.Boolean
+    export type IsABeforeB = ($: T.StringPair) => g_common.T.Boolean
 }

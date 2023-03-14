@@ -35,7 +35,7 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
         'builders': d({}),
 
         'functions': d({
-            "IsABeforeB": sfunc(typeReference("StringPair"), null, null, sdata(externalTypeReference("common", "Boolean"))),
+            "IsABeforeB": sfunc(sdata(typeReference("StringPair")), sdata(externalTypeReference("common", "Boolean"))),
         }),
 
     }],
