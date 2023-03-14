@@ -6,6 +6,8 @@ import * as g_common from "glo-pareto-common"
 
 export namespace B {}
 
+export namespace C {}
+
 export namespace F {
     
     export type IsABeforeB = ($: T.StringPair) => g_common.T.Boolean
