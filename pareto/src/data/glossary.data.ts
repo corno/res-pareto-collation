@@ -1,18 +1,11 @@
 import * as pd from 'pareto-core-data'
 
 import {
-    string,
-    null_,
-    nested,
-    dictionary, member, taggedUnion, types, group,
-    array,
+    string, member, group,
     typeReference,
-    sdata,
-    boolean,
+    data,
     sfunc,
     type,
-    optional,
-    number,
     externalTypeReference,
     imp,
 } from "lib-pareto-typescript-project/dist/submodules/glossary/shorthands"
@@ -31,12 +24,16 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
             "b": member(string()),
         })),
     }),
-    'type': ['synchronous', {
-        'builders': d({}),
-
+    'asynchronous': {
+        'interfaces': d({}),
+        'constructors': d({}),
+        'functions': d({}),
+    },
+    'synchronous': {
+        'interfaces': d({}),
+        'constructors': d({}),
         'functions': d({
-            "IsABeforeB": sfunc(sdata(typeReference("StringPair")), sdata(externalTypeReference("common", "Boolean"))),
+            "IsABeforeB": sfunc(data(typeReference("StringPair")), externalTypeReference("common", "Boolean")),
         }),
-
-    }],
+    },
 }
