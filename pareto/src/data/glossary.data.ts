@@ -4,7 +4,7 @@ import {
     string, member, group,
     typeReference,
     data,
-    sfunc,
+    sfunction,
     type,
     externalTypeReference,
     imp,
@@ -26,14 +26,13 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
     }),
     'asynchronous': {
         'interfaces': d({}),
-        'constructors': d({}),
-        'functions': d({}),
+        'algorithms': d({}),
+        
     },
     'synchronous': {
         'interfaces': d({}),
-        'constructors': d({}),
-        'functions': d({
-            "IsABeforeB": sfunc(data(typeReference("StringPair")), externalTypeReference("common", "Boolean")),
+        'algorithms': d({
+            "IsABeforeB": sfunction(data(typeReference("StringPair")), externalTypeReference("common", "Boolean")),
         }),
     },
 }
