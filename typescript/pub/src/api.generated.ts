@@ -8,5 +8,5 @@ export namespace A {
 }
 
 export type API = {
-    localeIsABeforeB: A.localeIsABeforeB
+    readonly 'localeIsABeforeB': A.localeIsABeforeB
 }
