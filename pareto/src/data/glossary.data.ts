@@ -32,7 +32,7 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
     'synchronous': {
         'interfaces': d({}),
         'algorithms': d({
-            "IsABeforeB": sfunction(data(typeReference("StringPair")), externalTypeReference("common", "Boolean")),
+            "IsABeforeB": sfunction(externalTypeReference("common", "Boolean"), data(typeReference("StringPair"))),
         }),
     },
 }
