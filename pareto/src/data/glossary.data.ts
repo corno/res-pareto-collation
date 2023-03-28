@@ -18,16 +18,19 @@ export const $: g_glossary.T.Glossary<pd.SourceLocation> = {
     'imports': d({
         "common": imp({}),
     }),
-    'types': d({
-        "StringPair": type(group({
-            "a": member(string()),
-            "b": member(string()),
-        })),
-    }),
+    'root': {
+        'namespaces': d({}),
+        'types': d({
+            "StringPair": type(group({
+                "a": member(string()),
+                "b": member(string()),
+            })),
+        }),
+    },
     'asynchronous': {
         'interfaces': d({}),
         'algorithms': d({}),
-        
+
     },
     'synchronous': {
         'interfaces': d({}),
